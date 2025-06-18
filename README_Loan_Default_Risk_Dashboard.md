@@ -1,112 +1,97 @@
+# 📊 Loan Default Risk Analysis Dashboard
 
-# 💼 Loan Default Risk Dashboard
-
-This interactive Power BI dashboard analyzes loan issuance and default patterns across multiple branches and income levels. It is designed for financial institutions to proactively monitor risk and identify high-risk borrowers through visual insights.
-
----
-
-## 📊 Project Overview
-
-Banks and microfinance institutions face growing exposure to non-performing loans. This dashboard provides a dynamic risk analysis by leveraging borrower data to identify default trends, highlight at-risk customers, and drive smarter lending decisions.
-
-### 🎯 Objectives:
-- Monitor loan performance metrics (volume, average size, default rate)
-- Identify borrower risk segments by income level and age
-- Visualize trends and distributions by branch and loan purpose
-- Support decision-makers with data-backed insights
+This Power BI dashboard helps financial institutions identify high-risk borrowers and understand loan default trends based on income level, purpose, and demographic insights.
 
 ---
 
-## 🔧 Tools Used
-- **Power BI** – Dashboard creation, DAX measures, data visualization
-- **Excel** – Data cleaning and structuring
-- **SQL (conceptual)** – Used to plan data logic and filtering
-- **JSON Theme File** – Custom styling for light and professional dashboard themes
+## 🧠 Project Objective
+
+To develop a visual analytics tool that supports data-driven loan risk assessment by identifying default patterns and borrower segments that are most prone to default.
 
 ---
 
-## 📁 Dataset Overview
+## 🛠️ Tools & Technologies Used
 
-A synthetic dataset of 100+ loan records includes:
-
-| Column        | Description |
-|---------------|-------------|
-| Loan_ID       | Unique loan identifier |
-| Customer_ID   | Borrower reference |
-| Loan_Amount   | Amount disbursed |
-| Term_Months   | Duration of the loan |
-| Income_Level  | Low, Moderate, or High |
-| Age           | Borrower age |
-| Loan_Purpose  | Business, Medical, Housing, etc. |
-| Branch        | Branch location |
-| Status        | Paid or Default |
-| Issue_Date    | Loan issuance date |
+- **Power BI** – Dashboard development, DAX measures, and slicers  
+- **Excel** – Source data preparation and cleaning  
+- **DAX** – Used for calculated KPIs like Default Rate and High Risk Count  
+- **Power Query** – Data transformation and modeling
 
 ---
 
-## 📈 Dashboard Features
+## 📊 Dashboard Preview
 
-- **📌 KPI Cards**: Total Loans, Average Loan Amount, Default Rate (%), High-Risk Count
-- **📊 Bar Chart**: Defaulted Loans by Income Level
-- **📉 Line Chart**: Monthly Loan Issuance Trend
-- **🍩 Donut Chart**: Loan Purpose Distribution
-- **📋 Table**: Top At-Risk Borrowers (highlighted by age and loan size)
-- **🔎 Slicers**: Filter by Branch, Income Level, Loan Purpose, and Issue Date
+![Dashboard Preview](images/dashboard-preview.png)
 
 ---
 
-## 🎨 Styling Highlights
+## 📌 Key Metrics
 
-- Light gray background with soft blue cards for clean presentation
-- Conditional formatting on loan amounts (red) and borrower age under 25 (yellow)
-- Custom JSON theme with fonts, border styles, and modern palette
-- Professionally formatted layout and slicer positioning
-
----
-
-## 📷 Screenshot
-
-![Loan Default Risk Dashboard](images/dashboard-preview.png)
-
-> *Note: Image above is for preview. Replace with your own dashboard screenshot.*
+| Metric               | Value      |
+|----------------------|------------|
+| Total Loans          | 100        |
+| Average Loan Amount  | $6,930     |
+| Default Rate (%)     | 14%        |
+| High Risk Count      | 3 Borrowers |
 
 ---
 
-## 🚀 Getting Started
+## 🔍 Insights
 
-1. Clone this repo or download the ZIP.
-2. Open the `.pbix` file in Power BI Desktop (or import the Excel dataset).
-3. Apply the included theme from the `/themes/` folder.
-4. Explore or publish the dashboard via Power BI Service.
+- 🔴 **Income-Level Defaults**:  
+  - High-income borrowers account for 5 defaults  
+  - Low-income borrowers: 6 defaults  
+  - Moderate-income: 3 defaults
+
+- 🟣 **Top At-Risk Borrowers** (age ≤ 25, high loan amounts):  
+  - Customer C1099 (Age 24, High Income, ₦13,500)  
+  - Customer C1048 (Age 22, Moderate Income, ₦12,000)
+
+- 🔄 **Monthly Loan Trends**:  
+  - Peak issuance in February (8 loans) and May (7 loans)  
+  - Notable drop in November and December
+
+- 🟠 **Loan Purpose Distribution**:  
+  - Business (26%) and Personal (22%) dominate purpose types  
+  - Medical (20%), Education (19%), and Housing (13%) follow
+
+- 🔵 **Branch Distribution** (based on defaults):  
+  - Abuja and Port Harcourt have multiple defaults among top borrowers
 
 ---
 
-## 🧠 Key Learnings
+## 📁 Project Structure
 
-- Built DAX measures to define KPIs and segment high-risk customers
-- Applied UX best practices to slicer placement, color contrast, and formatting
-- Created a polished dashboard ready for stakeholder presentation or portfolio use
+| File | Description |
+|------|-------------|
+| `Loan_Default_Analysis.pbix` | Power BI dashboard |
+| `Loan_Data_Cleaned.xlsx`     | Prepared dataset |
+| `README.md`                  | Project documentation |
+| `images/dashboard-preview.png` | Dashboard screenshot |
 
 ---
 
-## 🤝 Connect
+## 🚀 How to View the Dashboard
+
+1. Clone this repository or download the files.
+2. Open `Loan_Default_Analysis.pbix` in **Power BI Desktop**.
+3. Use slicers (Branch, Income Level, Loan Purpose, Date) to explore.
+4. Analyze KPIs, heatmaps, and charts for insights.
+
+---
+
+## 🧑‍💼 About Me
 
 **Folakemi Abiodun**  
+Data Analyst | Excel • SQL • Power BI • DAX • Tableau  
 📍 Fishers, IN  
-🔗 [LinkedIn](https://www.linkedin.com/in/folakemiabi)  
-📬 fabiodun855@gmail.com  
+📧 folakemiabiodun353@gmail.com  
+🔗 [LinkedIn](https://www.linkedin.com/in/folabiodun)
 
 ---
 
-## 📁 Folder Structure
+## 🧭 Next Steps
 
-```
-Loan_Default_Risk_Dashboard/
-│
-├── Loan_Default_Risk_Dataset.xlsx
-├── Folakemi_Professional_Theme.json
-├── Folakemi_Dark_Loan_Theme.json
-├── README.md
-└── images/
-    └── dashboard-preview.png
-```
+- 📈 Add credit score modeling for improved risk profiling  
+- 🔄 Connect to live data sources via Power Automate  
+- 📬 Integrate alerts for high-risk loan thresholds  
