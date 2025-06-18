@@ -1,0 +1,82 @@
+{
+    "name": "Folakemi Clean Professional Theme",
+    "dataColors": [
+        "#1f77b4",
+        "#2ca02c",
+        "#d62728",
+        "#ff7f0e",
+        "#9467bd"
+    ],
+    "background": "#F4F4F4",
+    "foreground": "#1F1F1F",
+    "tableAccent": "#1f77b4",
+    "visualStyles": {
+        "*": {
+            "*": {
+                "titleText": [
+                    {
+                        "fontSize": 14,
+                        "fontFamily": "Segoe UI Semibold",
+                        "color": {
+                            "solid": {
+                                "color": "#1F1F1F"
+                            }
+                        }
+                    }
+                ],
+                "labelText": [
+                    {
+                        "fontSize": 12,
+                        "fontFamily": "Segoe UI",
+                        "color": {
+                            "solid": {
+                                "color": "#444444"
+                            }
+                        }
+                    }
+                ],
+                "header": [
+                    {
+                        "fontSize": 12,
+                        "fontFamily": "Segoe UI",
+                        "color": {
+                            "solid": {
+                                "color": "#1F1F1F"
+                            }
+                        }
+                    }
+                ],
+                "card": [
+                    {
+                        "fontSize": 28,
+                        "fontFamily": "Segoe UI Semibold",
+                        "color": {
+                            "solid": {
+                                "color": "#1F1F1F"
+                            }
+                        },
+                        "background": {
+                            "solid": {
+                                "color": "#CFE2F3"
+                            }
+                        }
+                    }
+                ],
+                "slicer": [
+                    {
+                        "background": {
+                            "solid": {
+                                "color": "#DCE6F1"
+                            }
+                        },
+                        "border": {
+                            "solid": {
+                                "color": "#A6A6A6"
+                            }
+                        }
+                    }
+                ]
+            }
+        }
+    }
+}
